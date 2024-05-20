@@ -1,0 +1,33 @@
+:root {
+    --active : #14142B;
+    --body : #4E4B66;
+    --label : #6E7191;
+    --place-holder : #A0A3BD;
+    --line : #D9DBE9;
+    --input : #EFF0F6;
+    --background : #F7F7FC;
+    --off-white : #FCFCFC;
+    --primary : #5F2EEA;
+    --second : #1CC8EE;
+    --error : #ED2E7E;
+    --success : #00BA88;
+    --warning : #946200;
+    --warning-two : #FFD789;
+    --grad-primary : #5F2EEA;
+    --grad-primary-two : #BCA4FF;
+    --grad-second : #5F2EEA;
+    --grad-second-two : #82E9FF;
+    --grad-accend : #ED2E7E;
+    --grad-accend-two : #FFD789;
+    --white : #fff;
+    --primary-2 : #504242;
+    --text : #D37643;
+    --button : #D37643;
+    --white-red : #DB4444;
+    --green-btn : #47B486;
+    --hover-btn : #EB5757;
+}
+body {
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+}
