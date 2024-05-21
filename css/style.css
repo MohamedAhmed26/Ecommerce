@@ -1,5 +1,6 @@
 /* Start Global Rules */
 :root {
+    --black:#000;
     --active: #14142B;
     --body: #4E4B66;
     --label: #6E7191;
@@ -74,3 +75,59 @@ body {
 }
 
 /* End Global Rules */
+
+/* navbar style */
+.unbox-shadow:focus{
+    box-shadow: none;
+}
+
+/* nav{
+    height: 30vh;
+} */
+
+.sale-box{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.form-select{
+    width: 10vw;
+    color: var(--white);
+    display: in;
+}
+
+.form-select option{
+    background-color: var(--black);
+    text-align: center;
+}
+
+.form-select:active{
+    border: 0;
+}
+
+.nav-link,
+nav h1{
+    color: var(--active);
+}
+
+.nav-link:hover{
+    color: var(--body);
+}
+
+.nav-link:focus{
+    border-bottom:2px solid var(--active);
+    color: var(--active);
+    transition: all 0.4s linear;
+}
+
+.search-bar{
+    width: 20vw;
+    height: 50px;
+}
+
+.navbar-toggler{
+    font-size: 10px;
+    border-color: var(--body);    
+}
+
+/* End navbar style */

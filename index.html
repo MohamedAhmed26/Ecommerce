@@ -6,15 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Links -->
-    <link rel="stylesheet" href="./style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" /> -->
 </head>
 
 <body>
+  <!-- nav-bar -->
+  <nav class="border-bottom border-3">
+    <div class="sale-box text-center p-4 text-capitalize row d-none d-lg-flex">
+        <div class="col-10"><p class="d-inline me-3">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p><u>ShopNow</u></div>
+        <select class="form-select bg-transparent border-0 p-0 text-capitalize col-2 unbox-shadow" aria-label="Default select example">
+            <option value="english" selected>english</option>
+            <option value="arabic">arabic</option>
+        </select>
+    </div>
+    <div class="navbar navbar-expand-lg bg-body-tertiary mt-lg-5">
+        <div class="text-black container-fluid text-uppercase mx-5">
+          <a class="navbar-brand fw-bold" href="#"><h1>Exclusive</h1></a>
+          <button class="navbar-toggler unbox-shadow" type="button" data-bs-toggle="collapse" data-bs-target="#toggle" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse text-capitalize" id="toggle">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-4 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active focus" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">sign up</a>
+              </li>
+            </ul>
+            <form class="me-2 rounded-2 bg-secondary bg-opacity-10 d-none d-lg-flex justify-content-evenly" role="search">
+              <input class="search-bar form-control border-0 bg-transparent unbox-shadow" type="search" placeholder="What are you look for ?" aria-label="Search">
+              <span class="vr"></span>
+              <button type="search" class="btn unbox-shadow" data-bs-toggle="button"><i class="fa-solid fa-magnifying-glass m-auto position-relative mx-2"></i></button>
+            </form>
+            <button type="button" class="btn d-none d-lg-inline unbox-shadow" data-bs-toggle="button"><i class="fa-regular fa-heart fs-3"></i></button>
+            <button type="button" class="btn d-none d-lg-inline unbox-shadow" data-bs-toggle="button"><i class="fa-solid fa-cart-shopping fs-3"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end-nav -->
     <h1>Explore</h1>
     <p>Name</p>
 
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
 </body>
 
 </html>
