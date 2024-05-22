@@ -470,3 +470,117 @@ swiper-slide {
 }
 
 /* End Header */
+
+
+/* category */
+.category{
+    width: 75vw;
+    text-transform: capitalize;
+}
+
+.category>span {
+    border: 8px solid var(--hover-btn) ;
+    border-radius: 3px;
+}
+
+.category>p{
+    color: var(--hover-btn);
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.category-scroll button{
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: var(--place-holder);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.category-scroll button:hover{
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.lft:hover{
+    transform: translateX(-5px);
+}
+
+.rt:hover{
+    transform: translateX(5px);
+}
+
+.disabled:hover{
+    opacity: 0;
+} 
+
+.container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* ::scrollbar not suport to all browser so i use */
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 15px ;
+    justify-content: center;
+    border: 1px solid var(--place-holder);
+    border-radius: 5px;
+    padding: 30px !important;
+}
+
+.container div:hover{
+    background-color: var(--hover-btn);
+    transition: 0.8s;
+}
+
+.container span {
+    font-size: 90px !important;
+    color: var(--body);
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .category-scroll {
+        display: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2vw;
+    }
+
+    .container div{
+        width: 100%;
+        padding-top: 15px !important;
+    }
+
+    .container span {
+        font-size: 75px !important;
+
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .container span {
+        font-size: 50px !important;
+
+    }
+}
+
+
+/* end category style */
