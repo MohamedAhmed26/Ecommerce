@@ -47,6 +47,7 @@ card.forEach(item => {
     })
 })
 
+
 // trash product
 
 let containerrr = document.querySelectorAll(".wrapper");
@@ -54,6 +55,7 @@ containerrr.forEach(item => {
     item.addEventListener("click", eo => {
         if (eo.target.classList.contains("del-btn")) {
             eo.target.parentElement.parentElement.getElementsByClassName("cardss")[0].remove();
+            eo.target.setAttribute("disabled", "")
         } else if (eo.target.classList.contains("trashh")) {
             eo.target.parentElement.parentElement.remove();
         }
@@ -62,13 +64,45 @@ containerrr.forEach(item => {
 
 
 
+// Scroll arrow btn right, left in category section
+let category = document.getElementsByClassName("category")[0];
+category.addEventListener("click", function () {
+    let cards = document.querySelectorAll(".cardss")[1];
+    let scrollLength = cards.scrollWidth - cards.clientWidth;
+    let leftButton = document.querySelectorAll(".left")[1];
+    let rightButton = document.querySelectorAll(".right")[1];
 
+    function checkScroll() {
+        let currentScroll = cards.scrollLeft;
+        if (currentScroll === 0) {
+            leftButton.setAttribute("disabled", "");
+            rightButton.removeAttribute("disabled");
+        } else if (currentScroll === scrollLength) {
+            rightButton.setAttribute("disabled", "");
+            leftButton.removeAttribute("disabled");
+        } else {
+            leftButton.removeAttribute("disabled");
+            rightButton.removeAttribute("disabled");
+        }
+    }
 
+    cards.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+    checkScroll();
 
+    function leftScroll() {
+        cards.scrollBy({
+            left: -200,
+            behavior: "smooth",
+        });
+    }
+    function rightScroll() {
+        cards.scrollBy({
+            left: 200,
+            behavior: "smooth",
+        });
+    }
 
-
-
-
-
-
-
+    leftButton.addEventListener("click", leftScroll);
+    rightButton.addEventListener("click", rightScroll);
+});
