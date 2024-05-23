@@ -19,4 +19,3 @@ btRight.addEventListener("click", () => {
 btLeft.addEventListener("click", () => {
     tabsScroll.scrollLeft -= 350;
 })
-tabsScroll.addEventListener("click",manage)
