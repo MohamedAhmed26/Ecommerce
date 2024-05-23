@@ -48,7 +48,10 @@ body {
     font-weight: 600;
 }
 
-.containerrr {
+*:focus {
+    box-shadow: none !important;
+}
+.containerr {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -79,7 +82,6 @@ input:focus {
     outline: none !important;
     border: none !important;
 }
-
 /* End Global Rules */
 
 
@@ -104,6 +106,22 @@ input:focus {
     align-items: center;
     justify-content: center;
     padding: 10px !important;
+    width: 100%;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+.nav-phonee {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+}
+
+@media (max-width:991px) {
+    .nav-phonee {
+        margin: 0 !important;
+    }
 }
 
 .form-select {
@@ -158,9 +176,11 @@ nav h1 {
 nav .navbar-nav {
     margin-top: 0 !important;
 }
+
 nav .navbar-nav li {
     position: relative;
 }
+
 nav .navbar-nav li::before,
 nav .navbar-nav .active::before {
     content: '';
@@ -182,6 +202,7 @@ nav .navbar-nav li:hover::before,
 nav .navbar-nav .active::before {
     width: 100%;
 }
+
 nav .navbar-nav .nav-link {
     font-size: 17px !important;
     color: #000;
@@ -197,6 +218,9 @@ nav .navbar-nav .nav-link {
 nav .navbar-nav .nav-link:hover {
     opacity: 1;
 
+}
+#toggle > a {
+    color: #000 !important;
 }
 .material-symbols-outlined {
     font-size: calc(1.3rem + .6vw) !important;
@@ -263,7 +287,8 @@ swiper-slide img {
     -ms-transition: .5s;
     -o-transition: .5s;
 }
-.side-navv ul li a:hover svg {
+
+.side-navv ul li a:hover i {
     transform: translate(10px, -50%);
     -webkit-transform: translate(10px, -50%);
     -moz-transform: translate(10px, -50%);
@@ -276,7 +301,7 @@ swiper-slide img {
     -o-transition: .5s;
 }
 
-.side-navv ul li a svg {
+.side-navv ul li a i {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -349,7 +374,7 @@ swiper-slide {
     -o-transition: 0.8s;
 }
 
-.slide-imgs .header-text a svg {
+.slide-imgs .header-text a i {
     margin-left: 6px;
     transition: .5s;
     -webkit-transition: .5s;
@@ -358,7 +383,7 @@ swiper-slide {
     -o-transition: .5s;
 }
 
-.slide-imgs .header-text a:hover svg {
+.slide-imgs .header-text a:hover i {
     transform: translateX(10px);
     -webkit-transform: translateX(10px);
     -moz-transform: translateX(10px);
@@ -470,3 +495,221 @@ swiper-slide {
 }
 
 /* End Header */
+
+/* Start Today`s */
+.today-parent {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e5e4e4;
+}
+
+.today-parent .containerr {
+    position: relative;
+    width: 95%;
+}
+
+.today-parent .containerr .today-name {
+    color: var(--white-red);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.today-parent .containerr .today-name::before {
+    content: '';
+    width: 15px;
+    display: flex;
+    border-radius: 4px;
+    height: 30px;
+    background: var(--white-red);
+    margin-right: 10px;
+}
+
+.today-parent .containerr .watch {
+    display: flex;
+    align-items: center;
+}
+
+.today-parent .containerr .watch h2 {
+    margin-right: 5%;
+    font-weight: 600;
+}
+
+.today-parent .containerr .watch h5 {
+    display: flex;
+}
+
+.today-parent .containerr .watch h5 p {
+    margin-right: 20px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+}
+
+.today-parent .containerr .watch h5 p span {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.today-parent .containerr .arrow {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.today-parent .containerr .arrow i {
+    font-size: 19px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.today-parent .containerr .cardss {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.today-parent .containerr .cardss .card {
+    position: relative;
+    border: none;
+    width: 25%;
+    background: #f7f7f7;
+    padding: 10px;
+    margin-right: 15px;
+    min-width: 250px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.today-parent .containerr .cardss .card .present {
+    width: fit-content;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: 4px 17px;
+    background: var(--white-red);
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.today-parent .containerr .cardss .card .present:hover {
+    background: var(--hover-btn);
+}
+
+.today-parent .containerr .cardss .card .love-box {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.today-parent .containerr .cardss .card .love-box i {
+    margin-bottom: 10px;
+    font-size: 20px;
+    background: white;
+}
+.opaacity {
+    opacity: .5 !important;
+}
+.today-parent .containerr .cardss .card .card-img-top {
+    width: 80%;
+    align-self: center;
+}
+
+.today-parent .containerr .cardss .card .add-cart {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 51%;
+    right: 0;
+    left: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.today-parent .containerr .cardss .card:hover .add-cart {
+    height: fit-content;
+    padding: 10px;
+}
+
+.today-parent .containerr .cardss .card .card-body .titlee {
+    font-size: 20px;
+}
+
+.today-parent .containerr .cardss .card .card-body .price .new {
+    color: var(--white-red);
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.today-parent .containerr .cardss .card .card-body .price .old {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.today-parent .containerr .cardss .card .card-body .ratee .rate-num {
+    color: grey;
+    font-weight: 600;
+}
+
+.today-parent .containerr .view-products {
+    display: block;
+    margin: auto;
+    background: var(--white-red);
+    padding: 10px 15px !important;
+    color: white;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.today-parent .containerr .view-products:hover {
+    background: var(--hover-btn);
+}
+
+@media (max-width: 550px) {
+    .today-parent .watch {
+        display: none;
+    }
+}
+
+/* End Today`s */
