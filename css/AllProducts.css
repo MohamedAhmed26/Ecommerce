@@ -1,6 +1,7 @@
 
 .today-parent .containerr .arrow {
-    top: 0%;
+    top: 0% !important;
+    z-index: 10;
 }
 .today-parent-border-none {
     border: none;
@@ -39,4 +40,7 @@ body > div:nth-child(2) > div > div.del-parent > button {
 .trashh {
     color: grey;
     font-size: 18px;
+}
+.containerr .cardss .card img {
+    width: 60% !important;
 }
