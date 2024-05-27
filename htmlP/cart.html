@@ -71,7 +71,7 @@
                     <a href="#todays" class="btn d-none d-lg-inline unbox-shadow">
                         <i class="fa-regular fa-heart fs-3"></i>
                     </a>
-                    <a href="AllProducts.html" target="_blank">
+                    <a href="cart.html" target="_blank">
                         <span class="material-symbols-outlined"> shopping_cart </span>
                     </a>
                 </div>
@@ -94,36 +94,15 @@
                         <td class="last-td">Subtotal</td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="product">
-                                <img src="../img/Frame 613.png" alt="">
-                                <span>LCD Monitor</span>
-                            </div>
-                        </td>
-                        <td>$650</td>
-                        <td><input type="number" placeholder="01"></td>
-                        <td class="last-td">$650</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="product">
-                                <img src="../img/Frame 611.png" alt="">
-                                <span>H1 Gamepad</span>
-                            </div>
-                        </td>
-                        <td>$550</td>
-                        <td><input type="number" placeholder="02"></td>
-                        <td class="last-td">$1100</td>
-                    </tr>
+                <tbody class="table">
+                    <!-- js -->
                 </tbody>
                 <tfoot>
                     <tr>
                         <td><button>Return To Shop</button></td>
                         <td></td>
                         <td></td>
-                        <td><button class="ubdate">Update Cart</button></td>
+                        <td><button class="ubdate">Clear Cart</button></td>
                     </tr>
                 </tfoot>
             </table>
@@ -139,7 +118,7 @@
                 <h4>Cart Total</h4>
                 <div class="box">
                     <span>Subtotal:</span>
-                    <span>$1750</span>
+                    <span class="cart-total">0</span>
                 </div>
                 <div class="box">
                     <span>Shipping:</span>
@@ -147,11 +126,11 @@
                 </div>
                 <div class="last-box">
                     <span>Total:</span>
-                    <span>$1750</span>
+                    <span class="cart-total">0</span>
                 </div>
                 <div class="button">
-                    <button>Procees to checkout</button>
-                </div>
+                <button class="go-info">Procees to checkout</button>
+            </div>
             </div>
         </div>
     </div>
@@ -160,60 +139,62 @@
     
    <!-- Start Footer -->
    <div class="footerr">
-    <div class="containerr">
-        <div class="boxes">
-            <div class="box">
-                <h2>Ecommerce</h2>
-                <p>Subscribe</p>
-                <p>Get 10% off your first order</p>
-                <div class="emaill">
-                    <input type="email" placeholder="Enter Your Email">
-                    <i class="fa-regular fa-paper-plane"></i>
+        <div class="containerr">
+            <div class="boxes">
+                <div class="box">
+                    <h2>Ecommerce</h2>
+                    <p>Subscribe</p>
+                    <p>Get 10% off your first order</p>
+                    <div class="emaill">
+                        <input type="email" placeholder="Enter Your Email">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h2>Support</h2>
-                <p>Cairo, Egypt</p>
-                <p>Ecommerce@gmail.com</p>
-                <p>+123-123-123</p>
-            </div>
-            <div class="box">
-                <h2>Account</h2>
-                <a href="./logIn.html">
-                    <p>Login / Register</p>
-                </a>
-                <a href="./cart.html">
-                    <p>Cart</p>
-                </a>
-                <a href="./AllProducts.html">
-                    <p>Wishlist</p>
-                </a>
-                <a href="../index.html">
-                    <p>Shop</p>
-                </a>
-            </div>
-            <div class="box">
-                <h2>Download App</h2>
-                <img src="../img/Frame 719.png" alt="">
-                <div class="sociall">
-                    <a href="https://www.facebook.com/elhot.elsOohir11">
-                    <i class=" fa-brands fa-facebook"></i>
+                <div class="box">
+                    <h2>Support</h2>
+                    <p>Cairo, Egypt</p>
+                    <p>Ecommerce@gmail.com</p>
+                    <p>+123-123-123</p>
+                </div>
+                <div class="box">
+                    <h2>Account</h2>
+                    <a href="./logIn.html">
+                        <p>Login / Register</p>
                     </a>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
+                    <a href="./cart.html">
+                        <p>Cart</p>
                     </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="./AllProducts.html">
+                        <p>Wishlist</p>
                     </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="../index.html">
+                        <p>Shop</p>
                     </a>
                 </div>
+                <div class="box">
+                    <h2>Download App</h2>
+                    <img src="../img/Frame 719.png" alt="">
+                    <div class="sociall">
+                        <a href="https://www.facebook.com/elhot.elsOohir11">
+                        <i class=" fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <p>&#169; Copyright Ecommerce 2024. All right reserved</p>
         </div>
-        <p>&#169; Copyright Ecommerce 2024. All right reserved</p>
     </div>
-</div>
+    <script src="../js/cart.js"></script>
+</body>
 <!-- End Footer -->
 </body>
 </html>

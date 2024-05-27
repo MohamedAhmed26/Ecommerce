@@ -229,10 +229,10 @@ let interval = setInterval(() => {
     let duration = countDownDate - now;
     
     if (duration < 0) {
-    clearInterval(interval);
-    updateDuration(0);
-    return;
-}
+        clearInterval(interval);
+        updateDuration(0);
+        return;
+    }
 updateDuration(duration);
 }, 1000);
 

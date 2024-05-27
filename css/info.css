@@ -5,7 +5,7 @@
 body {
     font-family: system-ui, sans-serif;
 }
-.information .container {
+.information .containerr {
     margin: 100px 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -14,51 +14,51 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-.information .container .section-one {
+.information .containerr .section-one {
     flex-basis: 40%;
 }
-.information .container .info h1 {
+.information .containerr .info h1 {
     letter-spacing: 1.5px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-.information .container .info form  {
+.information .containerr .info form  {
     display: flex;
     flex-direction: column;
 }
-.information .container .info form label {
+.information .containerr .info form label {
     margin: 20px 0 15px;
     color: gray;
 }
-.information .container .info form input {
+.information .containerr .info form input {
     width: 400px;
     padding: 13px;
     border: none;
     background-color: #F5F5F5;
 }
-.information .container .info form input:focus {
+.information .containerr .info form input:focus {
     outline: none;
 }
-.information .container .info form .checkbox {
+.information .containerr .info form .checkbox {
     display: flex;
     align-items: center;
 }
-.information .container .info form .checkbox input {
+.information .containerr .info form .checkbox input {
     width: 20px;
     height: 20px;
     margin-top: 10px;
     margin-right: 10px;
 }
-.information .container .section-two {
+.information .containerr .section-two {
     flex-basis: 40%;
     margin-left: 75px;
 }
-.information .container .info-card {
+.information .containerr .info-card {
     display: flex;
     flex-direction: column;
     width: 75%;
 }
-.information .container .info-card .box {
+.information .containerr .info-card .box {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -66,59 +66,59 @@ body {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.information .container .info-card .box .img {
+.information .containerr .info-card .box .img {
     display: flex;
     align-items: center;
 }
-.information .container .info-card .box .img img{
+.information .containerr .info-card .box .img img{
     width: 45px;
     height: 45px;
     margin-right: 20px;
 }
-.information .container .section-two .info-card .cost {
+.information .containerr .section-two .info-card .cost {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
 }
-.information .container .section-two .info-card .cost-border {
+.information .containerr .section-two .info-card .cost-border {
     border: none;
 }
-.information .container .info-card .forms {
+.information .containerr .info-card .forms {
     display: flex;
     justify-content: space-between;
 }
-.information .container .info-card .forms form div {
+.information .containerr .info-card .forms form div {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
-.information .container .info-card .forms form input {
+.information .containerr .info-card .forms form input {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
-.information .container .info-card .forms form div label {
+.information .containerr .info-card .forms form div label {
     width: 100%;
 }
-.information .container .info-card .forms .card-img img  {
+.information .containerr .info-card .forms .card-img img  {
     width: 175px;
 }
-.information .container .section-two .submit {
+.information .containerr .section-two .submit {
     display: flex;
     flex-wrap: wrap;
 }
-.information .container .section-two .submit form [type="text"] {
+.information .containerr .section-two .submit form [type="text"] {
     padding: 15px 50px 15px 15px;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid gray;
 }
-.information .container .section-two .submit form [type="text"]:focus {
+.information .containerr .section-two .submit form [type="text"]:focus {
     outline: none;
 }
-.information .container .section-two .submit form button {
+.information .containerr .section-two .submit form button {
     padding: 16px;
     font-size: 16px;
     border-radius: 3px;
@@ -128,7 +128,7 @@ body {
     background-color: #DB4444;
     margin-top: 20px;
 }
-.information .container .section-two .submit form [type="submit"] {
+.information .containerr .section-two .submit form [type="submit"] {
     padding: 16px;
     width: 170px;
     margin-top: 20px;
@@ -140,51 +140,51 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .information .container .info form input {
+    .information .containerr .info form input {
         width: auto;
     }
-    .information .container .section-two {
+    .information .containerr .section-two {
         flex-basis: 50%;
     }
-    .information .container .info-card {
+    .information .containerr .info-card {
         width: 90%;
     }
 }
 @media (max-width: 780px) {
-    .information .container .section-one {
+    .information .containerr .section-one {
         flex-basis: 75%;
         text-align: center;
         margin-bottom: 30px;
     }
-    .information .container .section-one h1 {
+    .information .containerr .section-one h1 {
         margin-bottom: 20px;
         letter-spacing: 1.5px;
     }
-    .information .container .info form {
+    .information .containerr .info form {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
     }
-    .information .container .info form input  {
+    .information .containerr .info form input  {
         width: 100%;
     }
-    .information .container .info form .checkbox {
+    .information .containerr .info form .checkbox {
         font-size: 13px;
     }
-    .information .container .section-two {
+    .information .containerr .section-two {
         flex-basis: 75%;
         margin: 0;
     }
-    .information .container .info-card {
+    .information .containerr .info-card {
         width: 100%;
     }
 }
 @media (max-width: 489px) {
-    .information .container .section-two .submit form button {
+    .information .containerr .section-two .submit form button {
         font-size: 13px;
         width: 125px;
     }
-    .information .container .section-two .submit form [type="submit"] {
+    .information .containerr .section-two .submit form [type="submit"] {
         font-size: 13px;
         width: 125px;
     }
