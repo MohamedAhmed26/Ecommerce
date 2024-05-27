@@ -261,7 +261,10 @@ nav .navbar-nav .nav-link:hover {
 
 @media (max-width:991px) {
     #toggle>a {
-        display: none;
+        width: 100%;
+        display: block;
+        padding-left: 0;    
+        padding-right: 0;    
     }
 }
 

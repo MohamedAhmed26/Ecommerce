@@ -3,7 +3,8 @@
 
 * {
     box-sizing: border-box;
-    padding: 0; margin: 0;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     transition: all .2s linear;
@@ -34,10 +35,12 @@ html {
 button {
     border: none;
 }
+
 /* Style Content */
 
 /* contact start */
-#contact, #account_gaming{
+#contact,
+#account_gaming {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     padding-top: 60px;
@@ -53,16 +56,19 @@ button {
 .focus_page_txt {
     font-size: 14px;
     word-spacing: 5px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 
 .focus_page_txt a {
     color: var(--focus-color);
 }
+
 a {
     text-decoration: none;
 }
-.left-box, .right-box {
+
+.left-box,
+.right-box {
     padding: 25px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -83,7 +89,7 @@ a {
     flex-direction: column;
 }
 
-.left-box .calll i{
+.left-box .calll i {
     background-color: var(--brown-color);
     margin-right: 9px;
     color: white;
@@ -94,6 +100,7 @@ a {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 .left-box span {
     padding-top: 20px;
     display: block;
@@ -117,7 +124,8 @@ a {
     gap: 30px;
 }
 
-.right-box .inpts input, .textareaaa {
+.right-box .inpts input,
+.textareaaa {
     background-color: #eee;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -125,7 +133,8 @@ a {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 15px;
-    border: none; outline: none;
+    border: none;
+    outline: none;
 }
 
 .textareaaa {
@@ -150,13 +159,15 @@ a {
     align-self: flex-end;
 }
 
-#contact input::placeholder, #contact textarea::placeholder {
+#contact input::placeholder,
+#contact textarea::placeholder {
     font-size: 14px;
 }
 
 .btnnnn:hover {
     background-color: #c43434;
 }
+
 /* contact end */
 
 
@@ -169,10 +180,12 @@ a {
 
 .product_infor .product_imagesss {
     display: flex;
-    height: 80%;
+    height: 100%;
+    width: 100%;
 }
 
-.imageeeeee, .small_image {
+.imageeeeee,
+.small_image {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -184,12 +197,15 @@ a {
     display: flex;
     justify-content: center;
     padding: 20px;
+    width: 70%;
+    height: 70%;
+    align-self: center;
 }
 
 .imageeeeee img {
     display: block;
-    max-width: 90%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     align-self: center;
 }
 
@@ -323,6 +339,7 @@ a {
     cursor: pointer;
     margin: 0 20px;
 }
+
 .buy_nowww:hover {
     background-color: #b42b2b;
 }
@@ -351,7 +368,7 @@ a {
     display: none;
 }
 
-#heartt:checked ~ .hearttt .fa-solid.fa-heart{
+#heartt:checked~.hearttt .fa-solid.fa-heart {
     display: block;
 }
 
@@ -370,18 +387,22 @@ a {
     display: flex;
     align-items: center;
 }
-.parttt i{
+
+.parttt i {
     font-size: 25px;
     padding-right: 15px;
 }
-.parttt .txt a{
+
+.parttt .txt a {
     font-size: 11px;
     color: black;
     text-decoration: underline;
 }
-.parttt .txt span{
+
+.parttt .txt span {
     font-size: 11px;
 }
+
 /* account gaming end */
 
 
@@ -400,25 +421,33 @@ a {
     }
 }
 
-@media (max-width: 767px) {
-}
+@media (max-width: 767px) {}
 
 @media (max-width: 991px) {
     .contact-box {
         grid-template-columns: 100%;
     }
+
     .product_infor {
         grid-template-columns: 100%;
+        gap: 0 !important;
     }
+
     .product_infor .product_imagesss {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .product_infor .product_imagesss .imagesss {
         display: flex;
         flex-direction: row;
         width: 100%;
     }
+
+    #account_gaming>div.product_infor>div.product_imagesss>div {
+        height: 100% !important;
+    }
+
     .small_image {
         margin-top: 10px;
     }
@@ -429,6 +458,7 @@ a {
     .container {
         width: 970px;
     }
+
     .contact-box {
         display: grid;
         grid-template-columns: 30% 70%;
@@ -440,5 +470,34 @@ a {
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+}
+
+#account_gaming>div.product_infor>div.product_desc>div.revvv>p,
+#resulttt {
+    margin-bottom: 0 !important;
+    align-self: center;
+}
+
+/* Heart on btn buy now */
+.heart {
+    font-size: 30px;
+    animation-name: fall;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: fixed;
+    top: 0;
+    left: 300px;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-5vh);
+    }
+
+    100% {
+        transform: translateY(110vh);
     }
 }
